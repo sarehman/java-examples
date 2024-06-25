@@ -13,12 +13,6 @@ import java.util.stream.Collectors;
 @Path("/hello")
 public class GreetingResource {
 
-    /*@GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello(@RestQuery String name) {
-        return "Hello from Quarkus REST  "+ name;
-    }
-*/
     @GET
     @Transactional
     @Produces(MediaType.TEXT_PLAIN)
